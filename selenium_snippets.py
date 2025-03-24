@@ -19,7 +19,7 @@ import chromedriver_autoinstaller
 import polling2
 
 
-runpy.run_path('C:/Users/dreport/Python_Scripts/removepopuphcs.py')
+runpy.run_path('C:/Users/.../removepopup.py')
 
 
 #Automatically add the latest version of chromedrive to the path as needed
@@ -75,6 +75,24 @@ def itest():
 def ftest():
     global inum
     inum = 121
+
+##To deal the unkind extra windows that have no relevance but draw the cursor
+
+
+#go to the window that was just opened
+driver.switch_to.window(driver.window_handles[-1])
+
+
+deadwindow = gw.getWindowsWithTitle('Open')[0]
+deadwindow.close()
+driver.switch_to.window(driver.window_handles[0])
+#driver.switch_to.window(driver.window_handles[0])
+driver.find_element_by_xpath("//input[@type='file']").send_keys("C:\\users\\somedirectory\\andother.csv")
+
+##Save a picture of why something didn't work 
+driver.refresh()
+sleep(5)
+driver.save_screenshot("C:/users/.../downloads/afterupload.png")
 
 
 #Wait for download link and try to click  ~ every 5 seconds for up to 2 minutes
