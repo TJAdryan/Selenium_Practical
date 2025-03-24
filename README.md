@@ -1,2 +1,2 @@
-# Selenium_Practical
-# functions I find myself needing to reference I hope it is useful to others
+# practical selenium, xlsxwriter and pandas snippets
+## functions I find myself needing to reference from time to time
