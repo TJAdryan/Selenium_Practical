@@ -5,6 +5,8 @@ import numpy as np
 import xlsxwriter
 
 #needs sample file for testing purposes
+#add xml zipped from xlsx
+
 dpns = plns.drop_duplicates(['PatientName']) 
 
 writer = pd.ExcelWriter('N:/NursingRepor.xlsx', engine='xlsxwriter')
