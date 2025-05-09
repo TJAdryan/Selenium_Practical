@@ -20,6 +20,7 @@ import polling2
 
 
 runpy.run_path('C:/Users/.../removepopup.py')
+#edit pop up scripts
 
 
 #Automatically add the latest version of chromedrive to the path as needed
