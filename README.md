@@ -1,8 +1,8 @@
 # practical selenium, xlsxwriter and pandas snippets
 ### functions I find myself needing to reference from time to time
-### I know it needs to be cleaned up
+### Just the basics here
 
-Getting started:
+#Getting started:
 from selenium import webdriver
 import chromedriver_autoinstaller
 
