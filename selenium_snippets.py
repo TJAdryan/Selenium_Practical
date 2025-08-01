@@ -18,6 +18,13 @@ import runpy
 import chromedriver_autoinstaller
 import polling2
 
+#Headless support
+
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome(options=chrome_options)
+
 
 runpy.run_path('C:/Users/.../removepopup.py')
 #edit pop up scripts
@@ -27,6 +34,10 @@ runpy.run_path('C:/Users/.../removepopup.py')
 chromedriver_autoinstaller.install()
 
 
+dropdown = Select(driver.find_element(By.ID, "dropdown_id"))
+dropdown.select_by_visible_text("Option Text")
+dropdown.select_by_value("option_value")
+dropdown.select_by_index(0)
 
 ##Get beginning and ending date for report
 Curr_date_Less14 = datetime.date.today() + datetime.timedelta(-14)
