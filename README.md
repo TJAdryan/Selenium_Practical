@@ -11,4 +11,3 @@ chromedriver_autoinstaller.install()
 driver = webdriver.Chrome()
 driver.get("http://www.google.org")
 
-checkin Dom requests
